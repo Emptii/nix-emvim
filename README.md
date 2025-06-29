@@ -2,7 +2,7 @@
 
 ## Setup
 
-![Panda nixvim](./pics/panda-nix-vim.jpg)
+![nix-emvim](./pics/panda-nix-vim.jpg)
 
 ## Plugins
 
@@ -22,4 +22,4 @@ nix run github:pandalanax/panda-nix-vim
 
 ## Credits
 
-See [nixvim](https://github.com/nix-community/nixvim).
+See [nixvim](https://github.com/nix-community/nixvim) and [panda-nix-vim]([https://github.com/pandalanax/nix-pandavim)](https://github.com/pandalanax/panda-nix-vim).
