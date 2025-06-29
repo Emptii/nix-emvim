@@ -1,4 +1,4 @@
-# Panda nixvim
+# nix-emvim
 
 ## Setup
 
@@ -17,7 +17,7 @@ If you add a new configuration file, remember to add it to the
 ## Running
 
 ```
-nix run github:pandalanax/panda-nix-vim
+nix run github:emptii/nix-emvim
 ```
 
 ## Credits
