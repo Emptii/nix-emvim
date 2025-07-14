@@ -1,6 +1,7 @@
 {
   globals.mapleader = " ";
   opts = {
+    clipboard = "unnamedplus";
     updatetime = 50; # Faster completion
 
     number = true;
@@ -16,7 +17,10 @@
     breakindent = true;
 
     ignorecase = true;
-    completeopt = ["menuone" "noselect"];
+    completeopt = [
+      "menuone"
+      "noselect"
+    ];
     scrolloff = 8;
     mouse = "a";
 
