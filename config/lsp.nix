@@ -1,10 +1,8 @@
-{pkgs, ...}: {
+{ pkgs, ... }: {
   diagnostic.settings.virtual_lines.only_current_line = true;
   plugins = {
-    lsp-format = {enable = true;};
-    lsp-lines = {
-      enable = true;
-    };
+    lsp-format = { enable = true; };
+    lsp-lines = { enable = true; };
     lsp = {
       enable = true;
       keymaps = {
@@ -27,38 +25,31 @@
 
       # https://github.com/nix-community/nixvim/blob/main/plugins/lsp/default.nix
       servers = {
-        jsonls = {enable = true;};
-        ansiblels = {enable = true;};
-        eslint = {enable = true;};
-        html = {enable = true;};
-        lua_ls = {enable = true;};
-        nil_ls = {enable = true;};
-        #marksman = {enable = true;};
-        pyright = {enable = true;};
-        lemminx = {enable = true;};
-        svelte = {enable = true;};
-        gopls = {enable = true;};
-        ts_ls = {enable = false;};
-
-        yamlls = {
+        jsonls = { enable = true; };
+        ansiblels = { enable = true; };
+        eslint = { enable = true; };
+        html = { enable = true; };
+        lua_ls = { enable = true; };
+        nil_ls = {
           enable = true;
+          settings = { formatting = { command = [ "nixfmt" ]; }; };
         };
+        #marksman = {enable = true;};
+        pyright = { enable = true; };
+        lemminx = { enable = true; };
+        svelte = { enable = true; };
+        gopls = { enable = true; };
+        ts_ls = { enable = false; };
+
+        yamlls = { enable = true; };
       };
     };
   };
-  plugins.rustaceanvim = {
-    enable = true;
-  };
-  extraPackages = with pkgs; [
-    rustc
-    cargo
-    rustPackages.clippy
-  ];
+  plugins.rustaceanvim = { enable = true; };
+  extraPackages = with pkgs; [ rustc cargo rustPackages.clippy nixfmt-classic ];
   plugins.lspsaga = {
     enable = true;
-    beacon = {
-      enable = true;
-    };
+    beacon = { enable = true; };
     ui = {
       border = "rounded"; # One of none, single, double, rounded, solid, shadow
       codeAction = "💡"; # Can be any symbol you want 💡
@@ -82,7 +73,7 @@
       numShortcut = true;
       keys = {
         exec = "<CR>";
-        quit = ["<Esc>" "q"];
+        quit = [ "<Esc>" "q" ];
       };
     };
     lightbulb = {
@@ -90,14 +81,12 @@
       sign = false;
       virtualText = true;
     };
-    implement = {
-      enable = false;
-    };
+    implement = { enable = false; };
     rename = {
       autoSave = false;
       keys = {
         exec = "<CR>";
-        quit = ["<C-k>" "<Esc>"];
+        quit = [ "<C-k>" "<Esc>" ];
         select = "x";
       };
     };
