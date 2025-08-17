@@ -22,4 +22,4 @@ nix run github:emptii/nix-emvim
 
 ## Credits
 
-See [nixvim](https://github.com/nix-community/nixvim) and [panda-nix-vim]([https://github.com/pandalanax/nix-pandavim)](https://github.com/pandalanax/panda-nix-vim).
+See [nixvim](https://github.com/nix-community/nixvim) and [panda-nix-vim](https://github.com/pandalanax/nix-pandavim).
