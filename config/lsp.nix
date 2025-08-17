@@ -40,6 +40,7 @@
         svelte = { enable = true; };
         gopls = { enable = true; };
         ts_ls = { enable = false; };
+        csharp_ls = { enable = true; };
 
         yamlls = { enable = true; };
       };
