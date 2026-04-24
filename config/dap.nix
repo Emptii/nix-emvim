@@ -1,8 +1,11 @@
 {
-  config,
-  lib,
+  pkgs,
   ...
 }: {
+  extraPlugins = [
+    pkgs.vimPlugins.nvim-nio
+  ];
+
   plugins.dap = {
     enable = true;
     configurations = {
