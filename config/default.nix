@@ -23,5 +23,6 @@
     ./keymaps.nix
 
     ./dap.nix
+    ./algo-drill.nix
   ];
 }
